@@ -1,4 +1,4 @@
-export default recipe => `
+const createRecipeComponent = recipe => `
     <section class="recipe recipe--${recipe.id}">
         <header class="recipe__title">
             ${recipe.title}
@@ -14,3 +14,7 @@ export default recipe => `
         </button>
     </section>
 `
+
+export default {
+    createRecipeComponent
+}

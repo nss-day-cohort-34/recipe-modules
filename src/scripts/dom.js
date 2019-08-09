@@ -1,4 +1,4 @@
-import createRecipeCard from "./factory.js"
+import factory from "./factory.js"
 
 const recipeList = document.querySelector("#recipeList")
 const hiddenRecipeId = document.querySelector("#recipeId")
@@ -30,7 +30,7 @@ const renderRecipes = recipes => {
     recipeList.textContent = ""
 
     for (const recipe of recipes) {
-        const recipeCard = createRecipeCard(recipe)
+        const recipeCard = factory.createRecipeComponent(recipe)
         recipeList.innerHTML += recipeCard
     }
 }
