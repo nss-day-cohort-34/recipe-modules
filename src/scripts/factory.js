@@ -1,5 +1,5 @@
 export default recipe => `
-    <section class="recipe--${recipe.id}">
+    <section class="recipe recipe--${recipe.id}">
         <header class="recipe__title">
             ${recipe.title}
         </header>
@@ -8,6 +8,9 @@ export default recipe => `
         </div>
         <button id="deleteRecipe--${recipe.id}">
             Delete Recipe
+        </button>
+        <button id="editRecipe--${recipe.id}">
+            Edit Recipe
         </button>
     </section>
 `

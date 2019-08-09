@@ -1,0 +1,18 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    font-size: 2em;
+}
+
+#recipeForm {
+    margin: 3em 1em;
+}
+
+.recipe {
+    border: 1px solid green;
+    background-color: greenyellow;
+    padding: 2em;
+    margin: 2em;
+}

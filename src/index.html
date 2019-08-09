@@ -1,21 +1,37 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Nashville Software School</title>
-  <link rel="stylesheet" href="./styles/recipes.css">
+    <meta charset="utf-8">
+    <title>Nashville Software School</title>
+    <link rel="stylesheet" href="./styles/recipes.css">
 
 </head>
 
 <body>
-  <nav></nav>
+    <header class="title">Recipe Book</header>
 
-  <header></header>
+    <section id="recipeForm">
+        <form>
+            <input type="hidden" id="recipeId" value="" />
+            <fieldset class="fieldset">
+                <label for="recipeTitle">Title</label>
+                <input type="text" name="recipeTitle" id="recipeTitle">
+            </fieldset>
+            <fieldset class="fieldset">
+                <label for="recipeInstructions">Instructions</label>
+                <textarea type="date" name="recipeInstructions" id="recipeInstructions"></textarea>
+            </fieldset>
+        </form>
+        <button id="saveRecipe">Save Recipe</button>
+    </section>
 
-  <article id="recipeList"> </article>
 
-  <footer></footer>
+    <article id="recipeList"></article>
 
-  <script type="module" src="./scripts/main.js"></script>
+    <footer></footer>
+
+    <script type="module" src="./scripts/main.js"></script>
 </body>
+
 </html>
